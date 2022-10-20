@@ -6,7 +6,7 @@ const StarView = (props) => {
     const {} = props;
     return(
         <div className={styles._}>
-            <IconStar  fill="#ffeb3b" height={72} width={72}/>
+            
         </div>);
 }
 
