@@ -3,9 +3,14 @@ import styles from "./Star.module.scss";
 
 
 const StarView = (props) => {
-    const {} = props;
+    const {starm isView} = props;
+
     return(
-        <div className={styles._}>
+        isView &&
+        <div className={styles._} style={{
+            top: star.top,
+            left: star.left,
+        }}>
             
         </div>);
 }

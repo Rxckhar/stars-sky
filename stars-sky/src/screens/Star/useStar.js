@@ -1,10 +1,25 @@
+import {useEffect, useState} from "react";
+import { getRandomInt } from "../../functions/function";
 
+const useStar = (star) => {
+const [isView, setIsView] = useState(false);
 
-const useStar = () => {
+useEffect(() => {
+    return () => {
+        setIsView(false);
+    };
+}, []);
+
+useEffect(() => {
+    setTimeout(() =>{
+        setIsView(true);
+    }, getRandomInt(1000, 10000))
+}, []);
     
-    return({
-        
-    });
+    return{
+        star,
+        isView,
+    };
 }
 
 export default useStar;
