@@ -4,9 +4,7 @@ import useMoon from "./useMoon";
 
 
 const Moon = () => {
-    return(
-        <MoonView {...useMoon()}/>
-    );
+    return(<MoonView {...useMoon}/>);
 }
 
 export default Moon;

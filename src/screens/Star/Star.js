@@ -4,8 +4,7 @@ import useStar from "./useStar";
 
 
 const Star = ({star}) => {
-    return <StarView {...useStar(star)}/>;
-
+    return(<StarView {...useStar(star)}/>);
 }
 
 export default Star;
